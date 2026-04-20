@@ -4,4 +4,8 @@
 @use "./base/variables" as *;
 @use "./base/mixins" as *;
 @use "./base/themes" as *;
+@use "./base/common" as *;
 @use "./base/typography" as *;
+
+// Pages
+@use "@/views/Home/index";

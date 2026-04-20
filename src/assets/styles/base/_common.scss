@@ -1,0 +1,127 @@
+@use './variables' as *;
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html.app--fix {
+  overflow: hidden;
+}
+
+body {
+  font-family: $font;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  max-height: 100dvh;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-content {
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.app-container {
+  max-width: $container;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+
+  &.big {
+    max-width: 1440px;
+  }
+
+  &.small {
+    max-width: 640px;
+  }
+}
+
+.app-desktop {
+  @media screen and (max-width: 1025px) {
+    display: none !important;
+  }
+}
+
+.app-mobile {
+  @media screen and (min-width: 1025px) {
+    display: none !important;
+  }
+}
+
+.app-empty {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0;
+  color: var(--text-muted);
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &.center {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.app-error {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-top: -8px;
+}
+
+.app-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+
+  &:has(input:checked) {
+    .box {
+      background: var(--accent);
+      border-color: var(--accent);
+
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+
+  .box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:
+      background 0.3s ease-in-out,
+      border 0.3s ease-in-out;
+    border-radius: 2px;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+
+    svg {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}

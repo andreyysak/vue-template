@@ -1,0 +1,107 @@
+@use "variables";
+
+
+@mixin container {
+  max-width: variables.$container;
+  margin-inline: auto;
+  width: 100%;
+
+  padding-inline: 20px;
+
+  @media (max-width: variables.$laptop-breakpoint) {
+    padding-inline: 20px;
+  }
+
+  @media (max-width: variables.$tablet-breakpoint) {
+    padding-inline: 16px;
+  }
+
+  @media (max-width: variables.$mobile-breakpoint) {
+    padding-inline: 12px;
+  }
+}
+
+
+@mixin flex($align: center, $justify: flex-start, $gap: 0) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin flex-center {
+  @include flex(center, center);
+}
+
+@mixin flex-between {
+  @include flex(center, space-between);
+}
+
+@mixin flex-gap($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+
+@mixin grid($cols, $gap: 20px) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  gap: $gap;
+}
+
+@mixin grid-custom($template, $gap: 20px) {
+  display: grid;
+  grid-template-columns: $template;
+  gap: $gap;
+}
+
+@mixin grid-auto($min: 250px, $gap: 20px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}
+
+@mixin grid-responsive($desktop, $tablet: null, $mobile: null, $gap: 20px) {
+  display: grid;
+  grid-template-columns: repeat($desktop, 1fr);
+  gap: $gap;
+
+  @if $tablet {
+    @media (max-width: variables.$tablet-breakpoint) {
+      grid-template-columns: repeat($tablet, 1fr);
+    }
+  }
+
+  @if $mobile {
+    @media (max-width: variables.$mobile-breakpoint) {
+      grid-template-columns: repeat($mobile, 1fr);
+    }
+  }
+}
+
+@mixin grid-center($cols, $gap: 20px) {
+  @include grid($cols, $gap);
+  justify-items: center;
+  align-items: center;
+}
+
+@mixin grid-stretch($cols, $gap: 20px) {
+  @include grid($cols, $gap);
+  align-items: stretch;
+}
+
+
+@mixin absolute-center {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin transition($props: all, $time: 0.3s, $ease: ease) {
+  transition: $props $time $ease;
+}
