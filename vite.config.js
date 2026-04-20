@@ -27,8 +27,7 @@ export default defineConfig(({ mode }) => {
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use "@/assets/styles/helpers/variables.scss" as *;
-            @use "@/assets/styles/helpers/mixins.scss" as *;
+            @use "@/assets/styles/base/variables.scss" as *;
           `,
         },
       },
