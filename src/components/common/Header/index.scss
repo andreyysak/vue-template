@@ -1,0 +1,15 @@
+.header {
+  max-width: $container;
+  margin: 0 auto;
+  padding-block: 16px;
+
+  &__logo {
+    height: 64px;
+    width: 64px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

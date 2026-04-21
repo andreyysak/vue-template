@@ -1,11 +1,14 @@
-import Header from '@/components/common/Header/index.vue'
+import HeaderLogo from '@/assets/images/vue.png';
+
 export default {
-  name: 'MainLayout',
-  components: { Header },
+  name: 'Header',
+  components: {},
   setup() {},
   props: {},
   data() {
-    return {}
+    return {
+      HeaderLogo,
+    }
   },
   watch: {},
   created() {},
