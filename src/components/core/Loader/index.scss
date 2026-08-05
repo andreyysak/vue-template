@@ -1,0 +1,10 @@
+.core-loader {
+  @include flex-center;
+  @include absolute-fill;
+  z-index: $z-index-modal;
+  background-color: color-mix(in srgb, #{$color-bg} 60%, transparent);
+
+  &--fullscreen {
+    position: fixed;
+  }
+}
