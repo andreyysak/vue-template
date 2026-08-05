@@ -1,0 +1,28 @@
+$color-text: var(--p-text-color);
+$color-text--muted: var(--p-text-muted-color);
+$color-text--inverse: var(--p-primary-contrast-color);
+
+$color-bg: var(--p-content-background);
+$color-bg--secondary: var(--p-content-hover-background);
+$color-card-bg: var(--p-content-background);
+$color-border: var(--p-content-border-color);
+
+$color-primary: var(--p-primary-color);
+$color-primary--hover: var(--p-primary-hover-color);
+$color-primary--light: var(--p-highlight-background);
+
+$color-success: var(--p-green-500);
+$color-error: var(--p-red-500);
+$color-warning: var(--p-yellow-500);
+$color-info: var(--p-cyan-500);
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$radius: var(--p-content-border-radius);
+$shadow: var(--p-overlay-popover-shadow);
+
+$z-index-dropdown: 100;
+$z-index-sticky: 200;
+$z-index-modal: 300;
+$z-index-toast: 400;

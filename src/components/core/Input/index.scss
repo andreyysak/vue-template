@@ -1,0 +1,18 @@
+.core-input {
+  @include flex-column(0.25rem);
+
+  &__label {
+    @include text(sm, 500);
+    color: $color-text;
+  }
+
+  &__error {
+    @include text(xs);
+    color: $color-error;
+  }
+
+  &__hint {
+    @include text(xs);
+    color: $color-text--muted;
+  }
+}

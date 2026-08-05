@@ -1,0 +1,21 @@
+$font-path: '@/assets/fonts';
+
+$lato-weights: (
+  'Hairline': 100,
+  'Light': 300,
+  'Regular': 400,
+  'Bold': 700,
+  'Black': 900
+);
+
+@each $name, $weight in $lato-weights {
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+    src:
+      url('#{$font-path}/Lato-#{$name}.woff2') format('woff2'),
+      url('#{$font-path}/Lato-#{$name}.woff') format('woff');
+  }
+}
