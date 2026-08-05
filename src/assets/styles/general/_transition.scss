@@ -1,0 +1,107 @@
+//---fade
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease-in-out;
+  transform-origin: center center;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+//---slider
+.accordion-enter-active,
+.accordion-leave-active {
+  transition: all 0.3s ease-in-out;
+  transform-origin: center center;
+}
+.accordion-enter-from,
+.accordion-leave-to {
+  max-height: 0 !important;
+  opacity: 0;
+}
+
+//---slide in
+.slide-in-enter-active,
+.slide-in-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.slide-in-enter-from,
+.slide-in-leave-to {
+  transform: translateX(100%);
+}
+
+//---slide out
+.slide-out-enter-active,
+.slide-out-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.slide-out-enter-from,
+.slide-out-leave-to {
+  transform: translateX(-100%);
+}
+
+//---slide left
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+.slide-left-enter-from,
+.slide-left-leave-to {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+//---slide right
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+.slide-right-enter-from,
+.slide-right-leave-to {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+//---slide down
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+.slide-down-enter-from,
+.slide-down-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+//---slide up
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+.slide-up-enter-from,
+.slide-up-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+//---list group
+.list-enter-active,
+.list-leave-active {
+  transition:
+    transform 0.4s ease-in-out,
+    opacity 0.6s ease-in-out;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: scale(0.8) translateY(30px);
+}

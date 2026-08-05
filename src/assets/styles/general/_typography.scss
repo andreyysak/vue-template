@@ -1,0 +1,43 @@
+@use 'vars' as *;
+
+@mixin font($size: $font-size-base, $weight: $font-weight-regular, $line-height: $line-height-base) {
+  font-family: $font-family-base;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin heading-1 {
+  @include font($font-size-4xl, $font-weight-bold, $line-height-tight);
+}
+
+@mixin heading-2 {
+  @include font($font-size-3xl, $font-weight-bold, $line-height-tight);
+}
+
+@mixin heading-3 {
+  @include font($font-size-2xl, $font-weight-semibold, $line-height-tight);
+}
+
+@mixin heading-4 {
+  @include font($font-size-xl, $font-weight-semibold, $line-height-base);
+}
+
+@mixin body-text {
+  @include font($font-size-base, $font-weight-regular, $line-height-base);
+}
+
+@mixin body-text-sm {
+  @include font($font-size-sm, $font-weight-regular, $line-height-base);
+}
+
+@mixin caption {
+  @include font($font-size-xs, $font-weight-regular, $line-height-base);
+  color: $color-secondary-muted;
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

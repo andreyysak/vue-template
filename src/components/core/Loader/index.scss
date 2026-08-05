@@ -1,0 +1,10 @@
+.core-loader {
+  @include flex-center;
+  @include cover;
+  z-index: $z-index-modal;
+  background-color: rgba($color-background, 0.6);
+
+  &--fullscreen {
+    position: fixed;
+  }
+}

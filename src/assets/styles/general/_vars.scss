@@ -1,0 +1,100 @@
+$color-primary-50: #eef5ff;
+$color-primary-100: #d9e7ff;
+$color-primary-200: #bcd4ff;
+$color-primary-300: #8fb8ff;
+$color-primary-400: #5a90ff;
+$color-primary-500: #2f6bff;
+$color-primary-600: #1a4de6;
+$color-primary-700: #163cbf;
+$color-primary-800: #17359c;
+$color-primary-900: #19327c;
+$color-primary-950: #101f4b;
+
+$color-primary: $color-primary-600;
+$color-primary-hover: $color-primary-700;
+$color-primary-active: $color-primary-800;
+
+$color-accent: #f97316;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-50: #f8fafc;
+$color-gray-100: #f1f5f9;
+$color-gray-200: #e2e8f0;
+$color-gray-300: #cbd5e1;
+$color-gray-400: #94a3b8;
+$color-gray-500: #64748b;
+$color-gray-600: #475569;
+$color-gray-700: #334155;
+$color-gray-800: #1e293b;
+$color-gray-900: #0f172a;
+
+$color-background: $color-white;
+$color-main-text: $color-gray-900;
+$color-secondary: $color-gray-700;
+$color-secondary-muted: $color-gray-500;
+
+$color-success: #22c55e;
+$color-warning: #f59e0b;
+$color-danger: #ef4444;
+$color-info: #3b82f6;
+
+$font-family-base: 'Lato', sans-serif;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-md: 18px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+$font-size-2xl: 30px;
+$font-size-3xl: 36px;
+$font-size-4xl: 48px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$line-height-tight: 1.2;
+$line-height-base: 1.5;
+$line-height-loose: 1.8;
+
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+$spacing-6: 24px;
+$spacing-8: 32px;
+$spacing-10: 40px;
+$spacing-12: 48px;
+$spacing-16: 64px;
+
+$radius-none: 0;
+$radius-xs: 2px;
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 12px;
+
+$breakpoints: (
+  'desktop-xl': 1920px,
+  'desktop-lg': 1680px,
+  'desktop': 1440px,
+  'laptop-lg': 1360px,
+  'laptop': 1280px,
+  'laptop-sm': 1140px,
+  'tablet-lg': 1024px,
+  'tablet': 860px,
+  'tablet-sm': 768px,
+  'mobile-lg': 640px,
+  'mobile': 480px,
+  'mobile-sm': 425px
+);
+
+$z-index-dropdown: 100;
+$z-index-sticky: 200;
+$z-index-modal: 300;
+$z-index-toast: 400;

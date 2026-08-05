@@ -1,0 +1,19 @@
+.core-select {
+  @include flex-column;
+  gap: $spacing-1;
+
+  &__label {
+    @include body-text-sm;
+    font-weight: $font-weight-medium;
+    color: $color-secondary;
+  }
+
+  &__error {
+    @include caption;
+    color: $color-danger;
+  }
+
+  &__hint {
+    @include caption;
+  }
+}
